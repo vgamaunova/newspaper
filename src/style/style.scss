@@ -214,7 +214,7 @@ header{
 //programs
 #programs{
   padding: 60px 0;
-  //margin-top: 110px;
+  margin-top: 110px;
 }
 .program{
   &-description{
@@ -229,7 +229,7 @@ header{
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 1px 1px 1px #ccc;
+    box-shadow: 1px 1px 7px 1px #c5ccff;
     padding: 20px 10px 20px 20px;
     &-title{
       font-size: 20px;
@@ -255,7 +255,7 @@ header{
     width: 60%;
     max-width: 200px;
     float:left;
-    margin:-50px 5% -60px -50px;
+    margin:-50px 5% -60px -20px;
   }
 }
 //gallery
@@ -543,4 +543,79 @@ header{
   position: absolute;
   background: #fff;
   box-shadow: 1px 1px 1px #ccc;
+}
+//top-header
+.top-header{
+  background: #000;
+  color:#fff;
+  //padding: 10px;
+  overflow: hidden;
+}
+#weather{
+  width: 135px;
+  float: right;
+  margin-top: 13px;
+}
+#currency{
+  float: right;
+  margin: 7px 15px 0;
+}
+.sing{
+  text-align: right;
+  float: right;
+  margin-top: 15px;
+  margin-right: 25px;
+span{
+  cursor: pointer;
+    color:#fff;
+    font-size: 12px;
+    display: inline-block;
+    padding: 0 5px;
+  }
+}
+.modal{
+  width: 300px;
+  padding: 15px;
+  background: #fff;
+  margin: auto;
+  font-family:'Open Sans', sans-serif;
+  display: none;
+  left: 0;
+  right: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  &.open{
+    display: block;
+  }
+  &-title{
+    text-align: center;
+    color:#777;
+    font-size: 22px;
+    text-transform: uppercase;
+
+  }
+  &-wrapper{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    &.open{
+      display: block;
+    }
+  }
+}
+.close-button{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-weight: bold;
+  cursor: pointer;
+
 }
